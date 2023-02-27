@@ -1,0 +1,19 @@
+.headerNav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+  justify-content: space-around;
+  align-content: center;
+
+  font-weight: 400;
+}
+
+.headerNavLink {
+  white-space: nowrap;
+
+  transition: color 0.2s;
+}
+
+.headerNavLink:hover {
+  color: var(--main-color);
+}

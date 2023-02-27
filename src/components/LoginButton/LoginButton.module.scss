@@ -1,0 +1,23 @@
+
+.loginButtonGroup {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.loginButton {
+  padding: 10px;
+
+  color: var(--main-color) !important;
+
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+
+  transition: transform 0.2s;
+}
+
+.loginButton:hover {
+  transform: scale(1.1, 1.1);
+}
