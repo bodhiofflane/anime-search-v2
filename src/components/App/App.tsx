@@ -8,6 +8,8 @@ import Header from '../../layout/Header/Header';
 import styles from './App.module.scss';
 import Footer from '../../layout/Footer/Footer';
 import Main from '../../layout/Main/Main';
+import ListItem from '../ListItem/ListItem';
+import List from '../List/List';
 
 const App = () => {
   const dispatch = useAppDispatch();
@@ -31,11 +33,11 @@ const App = () => {
       <Header className={styles.header} />
 
       <Main className={styles.main}>
-        <ul>
+        <List>
           {animeList.map((oneAnime) => {
-            return <li>{oneAnime.title}</li>;
+            return <ListItem />;
           })}
-        </ul>
+        </List>
       </Main>
       <Footer className={styles.footer} />
     </div>
