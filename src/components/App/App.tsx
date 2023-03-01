@@ -35,7 +35,7 @@ const App = () => {
       <Main className={styles.main}>
         <List>
           {animeList.map((oneAnime) => {
-            return <ListItem />;
+            return <ListItem title={oneAnime.title} thumbnail={oneAnime.thumbnail} to={oneAnime.aired.to}/>;
           })}
         </List>
       </Main>

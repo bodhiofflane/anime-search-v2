@@ -15,8 +15,8 @@ const Header = ({children, className, ...props}: IHeaderProps) => {
     >
       <Container>
         <div className={styles.innerHeader}>
-          <div className="header-logo">
-            <h2>Anime Search</h2>
+          <div className={styles.headerBox}>
+            <h2 className={styles.headerLogo}>Anime Search</h2>
           </div>
 
           <HeaderNav />

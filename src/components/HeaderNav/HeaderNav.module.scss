@@ -5,15 +5,34 @@
   justify-content: space-around;
   align-content: center;
 
+  text-align: center;
+
   font-weight: 400;
+
+  @media screen and (max-width: 1150px) {
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .headerNavLink {
   white-space: nowrap;
 
   transition: color 0.2s;
+
+  &:hover {
+    color: var(--main-color);
+  }
+
+  @media screen and (max-width: 600px) {
+
+  }
+
 }
 
 .headerNavLink:hover {
-  color: var(--main-color);
+
 }

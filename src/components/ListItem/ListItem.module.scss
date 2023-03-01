@@ -2,19 +2,50 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  position: relative;
+
   border: 2px solid var(--border-color);
   border-radius: 8px;
 
   overflow: hidden;
 
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--main-color);
+    z-index: 1;
+    transform: translateY(-10px);
+    //transform: rotate(1deg);
+    box-shadow: 0 0px 20px var(--main-color);
+  }
+}
+
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  bottom: 0px;
+
+  padding: 10px;
+
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  text-align: center;
+  color: inherit;
+
 
 }
 
-.thumbnailBox {
-  position: relative;
-
-  .title {
-    position: absolute;
-    top: 50px;
-  }
+.secondInfo {
+  padding: 10px;
+  text-align: center;
 }
