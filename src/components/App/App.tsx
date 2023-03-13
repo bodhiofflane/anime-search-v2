@@ -22,8 +22,6 @@ const App = () => {
     dispatch(fetchAnimeList());
   }, [dispatch]);
 
-  console.log(animeList);
-
   if (loadingStatus === 'loading') {
     return <h1>loading</h1>;
   }
@@ -35,7 +33,7 @@ const App = () => {
       <Main className={styles.main}>
         <List>
           {animeList.map((oneAnime) => {
-            return <ListItem title={oneAnime.title} thumbnail={oneAnime.thumbnail} to={oneAnime.aired.to}/>;
+            return <ListItem key={oneAnime.title} title={oneAnime.title} thumbnail={oneAnime.thumbnail} to={oneAnime.aired.to}/>;
           })}
         </List>
       </Main>
